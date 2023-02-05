@@ -10,7 +10,7 @@ console.log("Hello World!");
 **Output:**
 `Hello World!`
 It can be used as many times as required. Each statement outputs text from a new line.
-#### To output text in Javascript, it must be enclosed in quotes. When writing numbers, quotes are not required. Anything enclosed in quotes is called a string.
+To output text in Javascript, it must be enclosed in quotes. When writing numbers, quotes are not required. Anything enclosed in quotes is called a string.
 
 ### Javascript in HTML
 To add javascript in an HTML document `<script>` tag is used.
