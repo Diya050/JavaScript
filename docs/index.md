@@ -323,7 +323,7 @@ var object = new person("John", 31);
 document.write(object.yearofBirth());
 ```
 ## The Date object
-The `date` object enables us to work with dates. A date consists of a year, a month, a day, an hour, a minute, a second and millliseconds.
+The `date` object enables us to work with dates. A date consists of a year, a month, a day, an hour, a minute, a second and millliseconds. Using `new date()`, we can get **current date and time**.
 ```javascript
 var d = new Date();
 var hr = d.gethours();
