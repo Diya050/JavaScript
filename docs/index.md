@@ -36,7 +36,7 @@ console.log("Hello!");
 - Subtraction **(-)**
 - Multiplication **(*)**
 - Division **(/)**
-- Exponentiation **(**)**
+- Exponentiation **( ** )**
 - Remainder **(%)**
 - Increment **(++)**- It repeatedely adds 1 to a value.
 - Decrement **(--)**- It repeatedely subtracts 1 from a value.
