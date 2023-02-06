@@ -145,6 +145,7 @@ console.log(Good Night);
 }// Good day
 ```
 ## Switch Statement
+Used in social media applications to develop a menu from which the user can select a topic he is interested in.
 ```javascript
 let choice = 1;
 
@@ -157,6 +158,107 @@ break;
 ```
 `break` statement stops the execution of other cases when there is a match.
 
+## Ternary Operator
+Ternary, or conditional operator assign a value to a variable based on some condition. 
+```javascript
+variable = (condition) ? value1 : value2
+```
+It takes three **operands** - a condition followed by a question mark `?`, then an expression to execute if the condition is **true** followed by a colon `:` and finally, the expression to execute if the condition is **false**.
+It is an alternative of `if else` statement. Here is an example-
+```javascript
+let age = 42;
+let isAdult = (age<18) ? "Too Young" : "Old Enough"
+console.log(isAdult);// Old Enough
+```
+## Loops
+### The For Loop
+Loop allows you to run the same code multiple times. This is useful for creating animations in games, or creating a countdown. The `for` loop has following syntax:
+```javascript
+for (initializer; condition; final-expression){
+        // code to run
+}
+```
+The initializer is a variable, which increments the number of times a loop has run. The condition is used to stop the loop. The final expression is run each time after the loop's code run. It is uasually used to increment the variable used in the condition. Example:
+```javascript
+for (let i = 1; i<=10; i++){
+console.log(i);// outputs numbers 1 to 10
+}
+```
+### The While Loop
+The `while` loop is another way to create loops. It runs as long as condiyion is true.
+```javascript
+while (condition){
+      // code to run
+}
+```
+Taking Previous example:
+```javascript
+let i = 1
+while (i<=10){
+  console.log (i);
+  i++;
+}
+```
+### The Do.. While Loop
+This loop will execute the code once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true.
+```javascript
+let i = 5;
+do {
+console.log(i);
+i++;
+}
+while (i<5);// outputs just 5
+```
+## Break and Continue
+The break statement allows you to exit a loop prematurely, based on the given condition.
+```javascript
+for ( let i = 0; i<10; i++){
+  if ( i == 5){
+  break;
+  }
+  console.log(i);
+}// outputs  0 to 4
+```
+The `continue` statement is used to skip an iteration of the loop and continue from next one.
+```javascript
+for ( let i = 0; i<10; i++){
+  if ( i == 5){
+  continue;
+  }
+  console.log(i);
+}// outputs  0 to 9 except 5
+```
+## Functions
+Function is a block of code designed to perform a particular function. For example `login()`,`logout()`,convert()`,etc.
+
+The purpose of a function is to create it once and call it multiple times when needed to perform particular tasks.
+```javascript
+function name() {
+//code to run
+}
+```
+### Calling a function
+To call a function we use name of the function followed by parantheses`()`. Example: `name()`.
+### Function Parameters
+The parameters are defined in the parantheses and can be used like variables in a function.
+```javascript
+function login(user) {
+console.log("Hi, "+user);
+}
+
+login("John");// Hi, John
+```
+### Returning From Functions
+In some cases, we donot need to output the result but assign it to a variable, to wok with it in our program.
+In these cases, we need our method to `return` the result value:
+```javascript
+function add(x,y){
+  return x+y;
+}
+let result = add(5,6)
+console.log(result);// 11
+```
+Everything after the `return` statement is ignored.
 
 
 
