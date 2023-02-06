@@ -322,6 +322,17 @@ function BornYear(){
 var object = new person("John", 31);
 document.write(object.yearofBirth());
 ```
+## The Date object
+The `date` object enables us to work with dates. A date consists of a year, a month, a day, an hour, a minute, a second and millliseconds.
+```javascript
+var d = new Date();
+var hr = d.gethours();
+console.log(hr);// gives the current number of hours of the day.
+```
+## SetInterval()
+The `setInterval()` method calls a function or evaluates an expression at specified intervals (in millliseconds).
+```javascript
 
+```
 
 
