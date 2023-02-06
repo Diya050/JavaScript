@@ -229,7 +229,7 @@ for ( let i = 0; i<10; i++){
 }// outputs  0 to 9 except 5
 ```
 ## Functions
-Function is a block of code designed to perform a particular function. For example `login()`,`logout()`,convert()`,etc.
+Function is a block of code designed to perform a particular function. For example `login()`,`logout()`, `convert()`,etc.
 
 The purpose of a function is to create it once and call it multiple times when needed to perform particular tasks.
 ```javascript
@@ -259,6 +259,69 @@ let result = add(5,6)
 console.log(result);// 11
 ```
 Everything after the `return` statement is ignored.
+## Objects
+Objects are variables which can contain many values.
+```javascript
+var person = {
+name:"John", age:31, favColor: "Green"
+};
+```
+Here name, age and favColor are **properties** and John, 31 and Green are **property values**.
+
+To access object properties, we have two methods:
+```javascript
+objectName.propertyName
+//or
+objectName['propertyName']
+```
+```javascript
+var person = {
+name:"John", age:31, favColor: "Green"
+};
+var x = person.age;
+document.write(x);// 31
+```
+### Object methods
+Methods are functions that are stored as object properties. For example, `document.write()` outputs the text, here **document** is `object` and **write** is `methodName`.
+### Object constructor
+The standard way to create an object is to use an object constructor.
+```javascript
+function person(name, age, color){
+  this.name = name;
+  this.age = age;
+  this.color = color;
+}
+```
+Here `person` is the object constructor which takes parameters and assigns them to the object properties. `this` refers to current object. For example:
+```javascript
+function person(name, age, color){
+  this.name = name;
+  this.age = age;
+  this.color = color;
+}
+var x = new person(John, 31, Green);
+document.write(x.age);// outputs 31
+```
+### Creation Of Object Method
+```javascript
+methodName = function() {
+// code lines
+}
+objectName.methodName();
+```
+Example:
+```javascript
+function person(name, age){
+  this.name = name;
+  this.age = age;
+  this.yearofBirth = BornYear;
+}
+function BornYear(){
+  return 2023-this.age;
+}
+var object = new person("John", 31);
+document.write(object.yearofBirth());
+```
 
 
 
