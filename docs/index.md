@@ -64,7 +64,7 @@ Constants are similar to variables but they do not change their values throughou
 - variable names are **case-sensitive** which means Score and score are different names.
 
 ## Booleans
-It is a datata type which can take only two values **true** or **false**.
+It is a data type which can take only two values **true** or **false**.
 ```javascript
 let isActive = true;
 let isHoliday = false;
@@ -91,7 +91,7 @@ x += 5;//x = x+5
 console.log(x);// 20
 ```
 ## Template literals 
-An another way to create strings and work with them more flexibly. They use back-ticks ` `` `. It allow us to use variables inside the strings. We need to add a dollar sign **$** and enclose the variable name in braces **{}**.
+An another way to create strings and work with them more flexibly. They use back-ticks (``). It allow us to use variables inside the strings. We need to add a dollar sign **$** and enclose the variable name in braces **{}**.
 ```javascript
 let name = "John";
 let text = `Welcome, ${name}`;
