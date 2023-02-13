@@ -1,8 +1,6 @@
     var elem = document.getElementById('circle');
     var params = { fullscreen: true};
     var two = new Two(params).appendTo(elem);
-   // var centerX = window.innerWidth / 2;
-    // var centerY = window.innerHeight / 2;
     var x = Math.round(Math.random()*50);
     var y = Math.round(Math.random()*50);
     var circles = [];
