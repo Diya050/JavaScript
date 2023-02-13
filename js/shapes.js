@@ -5,7 +5,7 @@
     var y = Math.round(Math.random()*50);
     var circles = [];
     var rectangles = [];
-    var ellipse = [];
+    var triangle = [];
 
 
 
@@ -18,9 +18,9 @@
           rectangles[i] = two.makeRectangle(x, y, Math.random()*90, Math.random()*120);
           rectangles[i].fill = 'white';
           rectangles[i].noStroke();
-	   ellipse[i] = two.makePolygon(x+(Math.random()*100), y+(Math.random()*70), x+(Math.random()*50), y+(Math.random()*120), x+(Math.random()*90), y+(Math.random()*80));
-          ellipse[i].fill = 'white';
-          ellipse[i].noStroke();
+	  triangle[i] = two.makePolygon(x+(Math.random()*100), y+(Math.random()*70), x+(Math.random()*50), y+(Math.random()*120), x+(Math.random()*90), y+(Math.random()*80));
+          triangle[i].fill = 'white';
+          triangle[i].noStroke();
           x += 200;
           if(x > 1500){
             y += 180;
@@ -48,9 +48,9 @@
         rectangles[randomi].fill = colors[i];
         rectangles[randomi].opacity = Math.random();
         rectangles[randomi].translation = new Two.Vector(600, 600);
-	  ellipse[randomi].fill = colors[i];
-        ellipse[randomi].opacity = Math.random();
-        ellipse[randomi].translation = new Two.Vector(600, 600);
+	triangle[randomi].fill = colors[i];
+        triangle[randomi].opacity = Math.random();
+        triangle[randomi].translation = new Two.Vector(600, 600);
 
      }
 	
